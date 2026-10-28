@@ -25,3 +25,9 @@ You are maintaining a live, public, two-page marketing director portfolio. The a
 - Treat `main` as production; make substantial changes on a branch first, review, and merge after checks.
 - Do not silently modify the PDF or enable analytics. Leave the email `CONFIG` blank until provided.
 - If editing copy from a request, preserve the current factual boundaries rather than reusing unverified text from outside portfolio examples.
+
+## Studio edition specifics
+- The paper-object hero and four switchable marketing discipline views are original diagrams, not employer project screenshots.
+- `studio.css` and `studio.js` contain the optional visual and interaction layer. The site must remain readable without either script.
+- If adding motion, limit it, avoid scroll hijacking, keep `prefers-reduced-motion` supported and preserve visible focus.
+- Prefer swapping in approved redacted authentic marketing deliverables rather than adding further decorative concepts.

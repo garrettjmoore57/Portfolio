@@ -27,7 +27,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&amp;family=Poppins:wght@300;400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="studio.css">
   <script src="main.js" defer></script>
+  <script src="studio.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -51,6 +53,7 @@
       <a class="wordmark" href="#top" aria-label="Garrett Moore, back to top">Garrett <span>Moore</span></a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
         <a href="#about">About</a>
         <a href="#approach">Approach</a>
         <a href="#skills">Skills</a>
@@ -63,27 +66,35 @@
 
   <main id="main">
     <!-- HERO: one promise, two useful actions and a CSS-only mosaic. -->
-    <section class="hero dark-surface" aria-labelledby="hero-title">
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+    <section class="hero dark-surface hero-v3" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow eyebrow-on-dark">Garrett Moore / Marketing Director</p>
-          <h1 id="hero-title">Marketing should make sense.<br><strong>And make things happen.</strong></h1>
-          <p class="hero-lead">I turn complex businesses into clear stories and useful marketing. Brand, digital, sales support and events—connected from the first idea to the finished piece.</p>
+          <h1 id="hero-title">A plan is just paper.<br><strong>Until someone builds it.</strong></h1>
+          <p class="hero-lead">I turn complicated businesses into clear stories, practical tools and marketing people can use. I work from the first conversation through the last detail.</p>
           <div class="actions">
-            <a class="button button-primary-on-dark" href="#work">See selected work</a>
+            <a class="button button-primary-on-dark" href="#work">See what I build</a>
             <a class="button button-outline-dark" href="assets/Garrett_Moore_Resume.pdf" download>Download résumé</a>
           </div>
-          <p class="hero-meta">Carrollton, Texas <span aria-hidden="true">/</span> Brand + digital + sales support</p>
+          <p class="hero-meta">Carrollton, TX <span aria-hidden="true">/</span> Brand, digital, sales and events</p>
         </div>
-        <div class="mosaic" aria-label="Abstract G OS tile composition in soft black, off-white and brass" role="img">
-          <div class="mosaic-tile mosaic-glyph" aria-hidden="true"><span>G</span></div>
-          <div class="mosaic-tile mosaic-paper" aria-hidden="true"><span class="mosaic-wordmark">GM</span></div>
-          <div class="mosaic-tile mosaic-ladder" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-          <div class="mosaic-tile mosaic-dark" aria-hidden="true"><span>Make<br>it clear.</span></div>
-          <div class="mosaic-tile mosaic-paper-quiet" aria-hidden="true"></div>
-          <div class="mosaic-tile mosaic-brass" aria-hidden="true"><span class="mosaic-rule"></span></div>
-          <div class="mosaic-tile mosaic-charcoal" aria-hidden="true"></div>
-          <div class="mosaic-tile mosaic-outline" aria-hidden="true"><span class="mosaic-small">G OS<br>01 / 04</span></div>
+        <!-- THE WORKING DESK: a typographic illustration made for this portfolio, not actual employer work. -->
+        <div class="folio-desk" role="img" aria-label="Original editorial composition of overlapping paper forms, a GM monogram, a grid and a project note.">
+          <span class="desk-coordinate desk-coordinate-top">FILE / GM—01</span>
+          <div class="desk-guides" aria-hidden="true"></div>
+          <div class="desk-paper desk-paper-back" aria-hidden="true"><span>BRAND / DIGITAL / EVENTS</span><b>From brief<br>to built.</b><i>01 — 04</i></div>
+          <div class="desk-paper desk-paper-mid" aria-hidden="true">
+            <span class="desk-paper-kicker">WORKING NOTES / 2026</span>
+            <span class="desk-paper-line"></span><span class="desk-paper-line"></span><span class="desk-paper-line short"></span>
+            <span class="desk-paper-foot">A STORY THAT HOLDS</span>
+          </div>
+          <div class="desk-paper desk-paper-front" aria-hidden="true">
+            <span class="desk-front-label">GARRETT MOORE / MARKETING</span>
+            <span class="desk-initials">G<span>M</span></span>
+            <span class="desk-front-foot"><span>THE IDEA</span><span>THE EXECUTION</span></span>
+          </div>
+          <span class="desk-coordinate desk-coordinate-bottom">BUILT FOR THE REAL WORLD ↗</span>
         </div>
       </div>
     </section>
@@ -161,20 +172,81 @@
       </div>
     </section>
 
+
+    <!-- WORKSHOP: an interactive view of the range, built as original portfolio art.
+         The diagrams are concepts, not screenshots or client deliverables. -->
+    <section class="studio-section" id="studio" aria-labelledby="studio-title">
+      <div class="container">
+        <div class="studio-section-heading">
+          <div>
+            <p class="eyebrow">The working studio / 04 disciplines</p>
+            <h2 class="statement" id="studio-title">I don't just plan it.<br><strong>I figure out how it works.</strong></h2>
+          </div>
+          <p>Choose a part of the job. Every view is based on documented work, drawn as an original study for this site.</p>
+        </div>
+        <div class="studio-console">
+          <div class="studio-rail" aria-label="Choose a marketing discipline">
+            <button type="button" class="studio-choice is-active" data-studio-tab="brand" aria-pressed="true"><span>01</span><strong>Build the brand</strong><i aria-hidden="true">↗</i></button>
+            <button type="button" class="studio-choice" data-studio-tab="sales" aria-pressed="false"><span>02</span><strong>Equip the team</strong><i aria-hidden="true">↗</i></button>
+            <button type="button" class="studio-choice" data-studio-tab="digital" aria-pressed="false"><span>03</span><strong>Improve the site</strong><i aria-hidden="true">↗</i></button>
+            <button type="button" class="studio-choice" data-studio-tab="events" aria-pressed="false"><span>04</span><strong>Make it show up</strong><i aria-hidden="true">↗</i></button>
+            <div class="studio-rail-bottom"><span>STRATEGY × MAKING</span><span>GM / 26</span></div>
+          </div>
+          <div class="studio-screen" aria-live="polite">
+            <div class="studio-panel is-active" data-studio-panel="brand">
+              <div class="studio-screen-top"><span>01 / BRAND &amp; MESSAGING</span><span>STUDY / G OS</span></div>
+              <div class="studio-visual studio-visual-brand" aria-label="An original typographic brand system specimen for this personal portfolio">
+                <div class="studio-system-display"><span class="studio-system-small">ONE IDEA / MANY TOUCHPOINTS</span><span class="studio-system-big">Same<br><strong>story.</strong></span><span class="studio-system-bottom">VOICE / TYPE / RHYTHM / RULES</span></div>
+                <div class="studio-system-swatches"><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="studio-screen-detail"><div><h3>Give people the same story.</h3><p>Led a refresh of the company brand, with a new look and written guidelines. Developed the voice and messaging for social posts.</p></div><a href="work.html#brand-refresh">Read the case study <span aria-hidden="true">↗</span></a></div>
+            </div>
+            <div class="studio-panel" data-studio-panel="sales" hidden>
+              <div class="studio-screen-top"><span>02 / SALES SUPPORT</span><span>STUDY / FORMATS</span></div>
+              <div class="studio-visual studio-visual-sales" aria-label="Illustrated collection of print and presentation formats">
+                <div class="studio-sales-one"><small>01 / BRIEF</small><b>One<br>clear<br>idea.</b><i></i><i></i></div>
+                <div class="studio-sales-two"><small>02 / DECK</small><b>Make the<br>case.</b><i></i><i></i></div>
+                <div class="studio-sales-three"><small>03 / PROPOSAL</small><b>Make it<br>usable.</b><i></i><i></i></div>
+              </div>
+              <div class="studio-screen-detail"><div><h3>Make the next conversation easier.</h3><p>Built brochures, case studies, bid templates and presentations that sales representatives can use in different buying conversations.</p></div><a href="work.html#sales-enablement">Read the case study <span aria-hidden="true">↗</span></a></div>
+            </div>
+            <div class="studio-panel" data-studio-panel="digital" hidden>
+              <div class="studio-screen-top"><span>03 / DIGITAL MARKETING</span><span>STUDY / SITE PLAN</span></div>
+              <div class="studio-visual studio-visual-digital" aria-label="Concept diagram showing three parts of an SEO and website design plan">
+                <div class="studio-browser"><div class="studio-browser-top"><span></span><span></span><span></span><b>PAGE STRUCTURE / SPECIMEN</b></div><div class="studio-browser-body"><span>BUYER-FIRST LAYOUT</span><strong>Find it.<br>Understand it.</strong><div class="studio-browser-chips"><i>Redirects</i><i>Page titles</i><i>Local pages</i></div></div></div>
+              </div>
+              <div class="studio-screen-detail"><div><h3>Start with the person searching.</h3><p>Designed and built an HTML/CSS website layout for school district buyers and wrote an SEO improvement plan. The layout is not claimed as launched, and no ranking lift is claimed.</p></div><a href="#skills">See digital skills <span aria-hidden="true">↗</span></a></div>
+            </div>
+            <div class="studio-panel" data-studio-panel="events" hidden>
+              <div class="studio-screen-top"><span>04 / EVENTS &amp; LOGISTICS</span><span>STUDY / DELIVERY</span></div>
+              <div class="studio-visual studio-visual-events" aria-label="Concept drawing of an exhibition floor plan and a logistics sequence">
+                <div class="studio-event-plan"><div class="studio-event-back">SHOW / FLOOR PLAN</div><div class="studio-event-zone">BOOTH<br><strong>DESIGN</strong></div><div class="studio-event-track"><span>SIGNS</span><span>GRAPHICS</span><span>FREIGHT</span></div></div>
+                <div class="studio-event-stat"><b>7<span>+</span></b><small>CONFERENCES<br>PER YEAR</small></div>
+              </div>
+              <div class="studio-screen-detail"><div><h3>Good design has to arrive.</h3><p>Lead a program of 7+ conferences a year, including booth graphics, giveaways, shipping and vendors. Planning a 20 × 40 ft exhibit.</p></div><a href="#experience">See my background <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </div>
+        </div>
+        <p class="studio-disclosure">Visuals are illustrative studies made for this portfolio, not actual employer artwork, campaign reports, or measured results.</p>
+      </div>
+    </section>
+
     <!-- ABOUT: only approved personal details; optional portrait slot needs no image. -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
         <div class="section-copy">
           <p class="eyebrow">A little about me</p>
-          <h2 class="statement" id="about-title">I know the creative side.<br><strong>And the loading dock.</strong></h2>
+          <h2 class="statement" id="about-title">The brand work is real.<br><strong>So is the loading dock.</strong></h2>
           <p>I'm from Michigan, went to Michigan State and now live in Carrollton, just outside Dallas.</p>
-          <p>I started in warehouse and logistics work. I'm forklift certified. It's not the usual opening line for a marketing director, but it's part of how I got here.</p>
+          <p>I started in warehouse and logistics work. I'm forklift certified. It's an unusual line on a marketing résumé, but it explains why I care about the part where plans turn into real work.</p>
           <p>I also sit on the board of a local Michigan State alumni chapter. I design event promotions and help alumni stay connected through game-watch events.</p>
           <a class="text-link" href="https://www.linkedin.com/in/garrettm-lsf" target="_blank" rel="noopener noreferrer">More about my background <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="portrait-frame" aria-label="Typographic portrait space, currently showing Garrett Moore's initials" role="img">
+        <div class="portrait-frame portrait-v3" aria-label="Typographic portrait space, currently showing Garrett Moore's initials" role="img">
           <!-- When you have a headshot, replace this initials div with an img element. -->
+          <span class="portrait-index">PERSON / NOT A LOGO</span>
           <div class="portrait-initials">GM</div>
+          <span class="portrait-aside">Michigan → Texas</span>
           <span class="portrait-caption">Garrett Moore <span> / </span> Dallas area</span>
         </div>
       </div>
