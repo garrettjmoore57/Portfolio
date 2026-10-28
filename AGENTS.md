@@ -31,3 +31,20 @@ You are maintaining a live, public, two-page marketing director portfolio. The a
 - `studio.css` and `studio.js` contain the optional visual and interaction layer. The site must remain readable without either script.
 - If adding motion, limit it, avoid scroll hijacking, keep `prefers-reduced-motion` supported and preserve visible focus.
 - Prefer swapping in approved redacted authentic marketing deliverables rather than adding further decorative concepts.
+
+
+## Authentic work assets and scope update (October 2026)
+
+The owner provided a marketing review, representative presentation and collateral PDFs, photos, old/new logos and personal selfies. Public facts additionally supported by this material and his direct statements:
+- 20+ custom sales presentations built/refined, and 15+ collateral variations.
+- He produces sales presentations and collateral for representatives and opportunities.
+- He personally captured the project-space photographs on the homepage and work archive.
+- He led a refresh of the employer brand with new visual direction and written guidelines; do not claim sole logo design or measured financial gains.
+
+The website is job-market neutral; do not name any school district, end client or competitor. No internal names/phone numbers, detailed presentation pages with contacts, or unapproved employer material. Be precise about photography versus furniture/interior design: the employer furnished the spaces, not the portfolio owner as an architect or interior designer. Use the original photos, not generated replacements.
+
+Do not claim the marketing owner's digital SEO results from the uploaded cross-team report. Keep website/digital as a secondary skill and distinguish authored plans from measured performance.
+
+The portrait is photo-based and AI-assisted; never describe it as unedited documentary photography. Keep alt text descriptive. Do not add social photos involving other people to the public site without their explicit consent.
+
+All photographs and logos live under `assets/`; the public source PDFs should NOT be added. Keep all gallery captions factually honest and test both site themes and small screens.
