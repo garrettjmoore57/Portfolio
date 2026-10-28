@@ -62,3 +62,14 @@ The Marketing Review document supplied with this update documents **20+ custom s
 Digital/SEO work remains a supporting skill. The main portfolio narrative prioritizes sales enablement, decks, brochures, print, brand strategy, event execution and photography.
 
 **Review before sharing publicly:** Any employer intellectual property or real school photography should only be shared with the user's authorization or appropriate permission. The original 31-page presentation, 17-page report, contact directories and individual school names have not been uploaded to this public repository.
+
+
+## Director edition — evidence and image quality
+
+- `director.css` is loaded last on both pages. It governs the Director's View, consistent photo crops, presentation and brochure fitting, and responsive image layouts.
+- The current pages load five optimized higher-resolution files: `portrait-editorial-v2.webp` (820×1230), `cte-space-hd.webp` (2048×1365), `college-prep-space-hd.webp` (1280×1365), `collateral-cover-hd.webp` (1224×1224), and `sales-deck-excerpt-hd.webp` (2000×1125).
+- All larger originals are based on owner-supplied sources. The portrait is AI-assisted, with the beard appearance refined; inspect it carefully before sharing publicly.
+- These files are **not 4K resolution**. Dimensions were chosen to improve clarity at normal retina display sizes while retaining fast downloads. Avoid forcing 4K image downloads where the site only displays a 400–700px tile.
+- Photography uses `object-fit:cover`, where careful crops preserve the subject; brochure and presentation content uses source-matched aspect ratios so words are not clipped. Click project photos and documents to open their larger file.
+- `assets/portrait-editorial.webp` and the original lower-resolution files remain in the repository for rollback. The live pages use the `-hd` and `-v2` versions.
+- The Director's View synthesizes documented brand work, 20+ custom presentations, collateral formats and conference execution. It does not claim revenue responsibility, hiring/management authority or returns that were not measured.
