@@ -46,3 +46,19 @@ The homepage's interactive studio offers four switchable concept views: brand, s
 ## Evidence upgrade
 
 Replace concept boards with actual, approved work when available. Candidate items: a redacted brochure spread, 2–3 deck slides, an HTML/CSS site layout screenshot, a conference installation image, a redacted email plan, and before/after brand style examples. Confirm approval to publish, remove school/client names and internal information, and never imply a conceptual study was a delivered project.
+
+
+## Authentic-work edition (October 2026)
+
+- `real-work.css` extends the existing G OS layout with actual project photography, an employer logo comparison, brochure and presentation spreads, and a photo-led hero.
+- `assets/cte-space.webp`, `assets/college-prep-space.webp`: on-location photos supplied by Garrett and credited as his photography. Furniture delivery/design is not attributed to him.
+- `assets/collateral-cover.webp`: cover of a real collaboration brochure Garrett produced.
+- `assets/sales-deck-excerpt.webp`: non-client-specific page from a custom sales presentation; no client contact pages are published.
+- `assets/brand-old.webp`, `assets/brand-new.webp`: former and updated employer identity supplied for a before/after comparison. Leadership of the larger refresh does not establish sole authorship of the logo.
+- `assets/portrait-editorial.webp`: AI-assisted, photo-based professionalized portrait derived from user-supplied selfies. It is an edited/generated interpretation, not an untouched photograph.
+
+The Marketing Review document supplied with this update documents **20+ custom sales presentations** and **15+ collateral variations**. Those are work-volume measures, not sales conversions or independent outcomes.
+
+Digital/SEO work remains a supporting skill. The main portfolio narrative prioritizes sales enablement, decks, brochures, print, brand strategy, event execution and photography.
+
+**Review before sharing publicly:** Any employer intellectual property or real school photography should only be shared with the user's authorization or appropriate permission. The original 31-page presentation, 17-page report, contact directories and individual school names have not been uploaded to this public repository.
