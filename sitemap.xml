@@ -1,3 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- The publication URL has not been supplied. This valid empty sitemap avoids advertising a false URL. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://garrettjmoore57.github.io/Portfolio/</loc></url>
+  <url><loc>https://garrettjmoore57.github.io/Portfolio/work.html</loc></url>
+</urlset>
