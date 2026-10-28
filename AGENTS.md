@@ -48,3 +48,11 @@ Do not claim the marketing owner's digital SEO results from the uploaded cross-t
 The portrait is photo-based and AI-assisted; never describe it as unedited documentary photography. Keep alt text descriptive. Do not add social photos involving other people to the public site without their explicit consent.
 
 All photographs and logos live under `assets/`; the public source PDFs should NOT be added. Keep all gallery captions factually honest and test both site themes and small screens.
+
+
+## Director edition boundaries
+- The first screen should position Garrett as a Director of Marketing focused on brand strategy, sales enablement, and field execution. Digital marketing is supporting context, not his specialty.
+- Preserve the source-grounded Director's View: direction, enablement, and execution. Do not claim team headcount, revenue ownership, campaign attribution or executive authority without independent approval.
+- Use `director.css` for later visual adjustments. It must remain loaded after `real-work.css`. Keep image dimensions aligned to the actual files, avoid artful crops of brochure text, and keep gallery imagery keyboard-accessible.
+- The refreshed portrait is an AI-assisted reinterpretation from provided imagery, **not** a camera-made professional headshot. Do not describe it as a documentary photograph.
+- New HD photos are original project photos supplied by Garrett. Do not claim he selected, designed, procured, or installed the pictured furniture.
