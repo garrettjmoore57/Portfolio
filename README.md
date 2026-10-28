@@ -1,29 +1,40 @@
-# Garrett Moore — portfolio site
+# Garrett Moore / marketing director portfolio
 
-A static portfolio built with hand-editable HTML, CSS and vanilla JavaScript. No framework, npm, build command or stock imagery. Designed with G OS. The included résumé is the original one-page PDF.
+A deliberately small, editorial portfolio built with semantic HTML, hand-written CSS and vanilla JavaScript. It deploys on GitHub Pages from `main`. No dependencies, install command, framework or build step.
 
-## Edit the site
+## Start here
 
-- `index.html` — every page section is marked with an HTML comment. Change the text here.
-- `styles.css` — theme tokens appear first. Both Soft White and Soft Black are supported.
-- `main.js` — enter the local part and domain of your email in the `CONFIG` object at the top. Until both are supplied, the email link stays hidden.
-- `assets/Garrett_Moore_Resume.pdf` — replace with an updated PDF using the same file name.
-- The About panel currently uses an `GM` typographic treatment. Replace `.portrait-initials` with a descriptive `<img>` element if you want to add a headshot.
-- `assets/social-card.png` — the social sharing image, 1200 × 630.
+- **Live portfolio:** https://garrettjmoore57.github.io/Portfolio/
+- **Work archive:** https://garrettjmoore57.github.io/Portfolio/work.html
+- **Repository:** https://github.com/garrettjmoore57/Portfolio
+- **Editing:** `index.html` is the home page; `work.html` holds the deeper case studies; `styles.css` controls both color themes and responsive layouts; `main.js` controls the theme and optional email link.
+- **Resume:** replace `assets/Garrett_Moore_Resume.pdf` with a current approved copy at the same path.
+- **Photo:** the initials panel in `index.html` works until a real headshot is provided. No fabricated portrait.
+- **Social preview:** `assets/social-card.png`.
 
-## Publish on GitHub Pages
+## A one-sentence request is enough
 
-1. Create a **public** GitHub repository and upload the **contents** of this folder, with `index.html` at the repository root.
-2. Commit and push the files to the `main` branch.
-3. Open the repository's **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
-4. Open the URL shown by Pages. Test navigation, the PDF download and mobile layout.
-5. Once your public URL is confirmed, add it as an absolute `<loc>` inside `sitemap.xml`, and add absolute `og:url`, `og:image` and `twitter:image` URLs to `index.html`. Relative links were retained for project-repository compatibility rather than inventing a domain.
-6. If using a custom domain, configure it in Pages, follow GitHub's DNS instructions and enable HTTPS after validation.
+If using connected GitHub tools or a coding agent, ask: "Read the current files in garrettjmoore57/Portfolio, make [requested change] without inventing claims, test the result, and prepare the update."
 
-A sitemap cannot honestly contain a page URL until you know the final domain. The included `sitemap.xml` is valid XML and deliberately empty until publication. For SEO and social previews, finalize those URLs after the site is live. `robots.txt` allows crawling.
+For full directions on safe editing and design decisions, see `AGENTS.md`. Research notes and reference links are in `DESIGN-RESEARCH.md`.
 
-## Quality checks
+## Editorial rules
 
-Open `index.html` locally to edit, but test from an HTTPS Pages URL. In browser DevTools, audit the published site with Lighthouse for performance, accessibility, best practices and SEO; check the result on mobile as well as desktop. 95+ is the design goal, not a guaranteed score. Social link previews also need a deployed absolute image URL. The visible email link offers light anti-scraping protection only; it is not secure against a crawler that runs JavaScript.
+Only publish career facts from Garrett's approved resume and claims register. These source documents are not published in the repository. Never turn a planned item into a delivered result or imply that a conceptual diagram is an actual client artifact. Do not add client names, confidential work, numerical performance results, or quotations without explicit supporting evidence. The visual project previews in the homepage are editorial illustrations and labeled as such.
 
-The PDF may include contact details that are not present in the public HTML. Review that document before publishing.
+## Deploy on GitHub Pages
+
+GitHub **Settings → Pages → Deploy from a branch → main → /(root)**. Merging a pull request to `main` triggers deployment automatically. The website uses relative links so both pages work from the `/Portfolio/` path. If you add a custom domain, update the canonical tags, social URLs and sitemap first.
+
+## Quick checks before publishing
+
+1. Open both pages and verify every navigation, project, LinkedIn and résumé link.
+2. Test mobile and desktop: no clipped cards or sideways scrolling.
+3. Confirm keyboard navigation, visible focus and reduced-motion behavior.
+4. Check both light and dark themes.
+5. Audit Lighthouse on the deployed site. 95+ is a goal, not an audited promise.
+6. Read case-study copy against the source documents. No invented results.
+
+## Email and privacy
+
+The email is deliberately empty in `main.js` CONFIG until the owner supplies one. The site does not publish a phone number or street address in HTML. Review the PDF for contact information before sharing it: PDF content is publicly downloadable. JavaScript email assembly deters basic scrapers only.
