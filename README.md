@@ -7,7 +7,7 @@ A deliberately small, editorial portfolio built with semantic HTML, hand-written
 - **Live portfolio:** https://garrettjmoore57.github.io/Portfolio/
 - **Work archive:** https://garrettjmoore57.github.io/Portfolio/work.html
 - **Repository:** https://github.com/garrettjmoore57/Portfolio
-- **Editing:** `index.html` is the home page; `work.html` holds the deeper case studies; `styles.css` controls both color themes and responsive layouts; `main.js` controls the theme and optional email link.
+- **Editing:** `index.html` is the home page; `work.html` holds the deeper case studies; `styles.css` contains G OS tokens and core layout; `studio.css` controls the signature layered-paper hero and interactive showcase; `main.js` controls the theme and optional email link; `studio.js` adds keyboard controls and restrained motion.
 - **Resume:** replace `assets/Garrett_Moore_Resume.pdf` with a current approved copy at the same path.
 - **Photo:** the initials panel in `index.html` works until a real headshot is provided. No fabricated portrait.
 - **Social preview:** `assets/social-card.png`.
@@ -38,3 +38,11 @@ GitHub **Settings → Pages → Deploy from a branch → main → /(root)**. Mer
 ## Email and privacy
 
 The email is deliberately empty in `main.js` CONFIG until the owner supplies one. The site does not publish a phone number or street address in HTML. Review the PDF for contact information before sharing it: PDF content is publicly downloadable. JavaScript email assembly deters basic scrapers only.
+
+## Working Studio experience
+
+The homepage's interactive studio offers four switchable concept views: brand, sales, digital and events. All visuals are purpose-made portfolio illustrations, **not** literal employer work samples. To modify a discipline, edit its matching `data-studio-panel` block in `index.html`; keep the `data-studio-tab` value in sync and edit styling under `.studio-visual-*` in `studio.css`. Keyboard arrows and Home/End switch views. No build step or analytics.
+
+## Evidence upgrade
+
+Replace concept boards with actual, approved work when available. Candidate items: a redacted brochure spread, 2–3 deck slides, an HTML/CSS site layout screenshot, a conference installation image, a redacted email plan, and before/after brand style examples. Confirm approval to publish, remove school/client names and internal information, and never imply a conceptual study was a delivered project.
